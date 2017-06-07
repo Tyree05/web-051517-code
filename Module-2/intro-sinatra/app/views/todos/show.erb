@@ -8,8 +8,15 @@
         </p>
       </div>
       <div class="card-action">
-        <a href="/todos/<%= @todo.id %>/edit">Update</a>
-        <a href="#">Delete</a>
+        <a class="btn-floating btn-large orange left" href="/todos/<%= @todo.id %>/edit">
+          <i class="material-icons right">mode_edit</i>
+        </a>
+        <form action="/todos/<%= @todo.id %>" method="post">
+          <input type="hidden" name="_method" value="delete"/>
+          <button class="btn-floating btn-large red" type="submit">
+            <i class="material-icons left">delete</i>
+          </button>
+        </form>
       </div>
     </div>
   </div>

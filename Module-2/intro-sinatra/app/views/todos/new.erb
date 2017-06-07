@@ -1,0 +1,14 @@
+<form action="/todos" method="post">
+  <label for="todo_title">Title</label>
+  <input type="text" name="todo[title]" id="todo_title"/>
+  <p>
+    <input class="with-gap" type="checkbox" name="todo[complete]" id="todo_complete"/>
+    <label for="todo_complete">Complete</label>
+  </p>
+  <button class="waves-effect waves-light btn" type="submit">Create</button>
+</form>
+<% if @error %>
+<div class="">
+  <%= @error %>
+</div>
+<% end %>
