@@ -1,4 +1,5 @@
 require_relative './config/environment'
 
 
-run TodosController
+use TodosController
+run ApplicationController
