@@ -13,3 +13,7 @@
 - [Playlister Lab](https://www.youtube.com/watch?v=LRX0aZj9v7Y)
 - [SQL](https://www.youtube.com/watch?v=fmYVLDLlx3g)
 - [Joins & ORMs](https://www.youtube.com/watch?v=ZfS1EEF5GWA)
+- [Rack & Sinatra](https://www.youtube.com/watch?v=qPNb12v_WMw&feature=youtu.be)
+- [Sinatra Forms 1](https://www.youtube.com/watch?v=lLq3uFVohoc&feature=youtu.be)
+- [Sinatra Forms 2](https://www.youtube.com/watch?v=uhim3ZiAlmc)
+- [Sinatra REST](https://www.youtube.com/watch?v=ODz3uxkhFdA&feature=youtu.be)
