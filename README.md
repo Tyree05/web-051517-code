@@ -9,6 +9,10 @@
 - [Intro AR](http://youtu.be/soIP8t6v7f4)
 - [AR Relations](http://youtu.be/MKOuEujS4RU)
 
+### Module 2
+
+- [Rails Auth Part 1](http://youtu.be/nMTatXFAU0c)
+
 ## Avi Lecture Videos
 - [Playlister Lab](https://www.youtube.com/watch?v=LRX0aZj9v7Y)
 - [SQL](https://www.youtube.com/watch?v=fmYVLDLlx3g)
