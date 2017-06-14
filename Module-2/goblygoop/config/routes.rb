@@ -1,10 +1,7 @@
 Rails.application.routes.draw do
   root 'beers#index'
 
-  # resources :users do
-  #   resources :beers
-  # end
-
+  resources :users 
   #get 'beers/index'
   get '/beers/search' => 'beers#search'
   post '/beers/search' => 'beers#find_beer'
