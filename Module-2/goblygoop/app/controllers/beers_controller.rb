@@ -1,4 +1,6 @@
 class BeersController < ApplicationController
+  before_action :authenticated, only: [:new]
+  
   def index
     @beers = Beer.all
   end
