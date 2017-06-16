@@ -9,9 +9,14 @@
 - [Intro AR](http://youtu.be/soIP8t6v7f4)
 - [AR Relations](http://youtu.be/MKOuEujS4RU)
 
+
 ### Module 2
 
 - [Rails Auth Part 1](http://youtu.be/nMTatXFAU0c)
+- [Rails Sessions](http://youtu.be/_SBMH8_NZdE)
+- [Rails Routing](http://youtu.be/TQ1eHFsH6SI)
+- [FULL RAILS CRUD](http://youtu.be/umMiA-9WQpc)
+- [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
 ## Avi Lecture Videos
 - [Playlister Lab](https://www.youtube.com/watch?v=LRX0aZj9v7Y)
