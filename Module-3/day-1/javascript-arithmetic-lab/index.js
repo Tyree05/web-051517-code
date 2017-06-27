@@ -36,9 +36,6 @@ function multiply(left, right) {
 }
 
 function inc(number) {
-  virtualConsole.log("#############")
-  console.log("asdf")
+  debugger
   return number+1
 }
-
-console.log(inc(52))
