@@ -35,7 +35,26 @@ function multiply(left, right) {
   return left * right
 }
 
+function print(number) {
+  if (number > 200) {
+    return "greater"
+  } else {
+    return "less than"
+  }
+}
 function inc(number) {
-  debugger
+  if (number >300) {
+  } else {
+    number = 500
+  }
+  debugger;
+  print(234)
+  for (let i=0;i<5;i++) {
+    console.log("Asdf")
+  }
+  debugger;
   return number+1
 }
+
+person = {"name": "joe", "height": 74}
+console.dir(person)
