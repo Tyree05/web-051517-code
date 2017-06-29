@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+      Example
+    </title>
+
+
+  </head>
+  <body>
+    <h1>
+      Example Page
+    </h1>
+    <h1 id="otherHeader">
+      Other Header
+      </h1>
+    <p>
+
+      <textarea id="response"></textarea>
+
+      <button>Click Me!</button>
+
+      <a href="#">I'm a link</a>
+
+    </p>
+
+    <ul>
+      <li>Starter Code</li>
+    </ul>
+
+    <script>
+    function clicker(event) {
+      event.preventDefault()
+    //  let textAreaContents = document.querySelector("#response")
+    let textAreaContents = $("#response")
+/*
+      let li = document.createElement("li")
+      let text = document.createTextNode(textAreaContents.value)
+      li.appendChild(text)
+      document.querySelector("ul").appendChild(li)
+      */
+
+      let list = $("ul")[0]
+
+      $(list).append(`<li>${textAreaContents.val()}</li>`)
+      //console.dir(textAreaContents.value)
+    }
+    let button = document.querySelector("button")
+
+    let link = document.querySelector("a")
+
+    link.addEventListener("click",clicker)
+
+    button.addEventListener("click",clicker)
+
+    button.addEventListener("click",function(event) {
+      console.log("testing")
+    })
+    </script>
+  </body>
+</html>
