@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>
+      Example
+    </title>
+
+  </head>
+  <body>
+    <h1>
+      Example Page
+    </h1>
+
+    <script>
+/*
+    console.log('a')
+    //do something
+    console.log('b')
+    //do something else
+    console.log('c')
+    */
+
+    console.log('a')
+    console.log(new Date().getTime())
+    let newBio = {"bio": "this time from CODE"}
+    $.ajax({
+      url: "https://api.github.com/user?access_token=07ca9f3585ac443421d1fa7e433907e44961a4b6",
+      data: JSON.stringify(newBio),
+      method: "PATCH",
+      success: function callback(data,status,response) {
+        console.log('b')
+        console.log(new Date().getTime())
+
+        console.log("d")
+      }
+    });
+
+    console.log('c')
+    console.log(new Date().getTime())
+    </script>
+  </body>
+</html>
