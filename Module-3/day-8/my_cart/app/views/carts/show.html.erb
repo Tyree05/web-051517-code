@@ -1,0 +1,22 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User email:</strong>
+  <%= @cart.user_email %>
+</p>
+
+  <strong>Items</strong>
+<ul>
+    <% @cart.items.each do |item| %>
+        <li><%= item.name %> - <%= item.price %>
+    <% end %>
+    </ul>
+
+    <%= form_for(@cart_item) do |f| %>
+        <%= f.collection_select(:item_id,Item.all,:id,:name) %>
+    <%= f.hidden_field(:cart_id) %>
+    <%= f.submit %>
+    <% end %>
+
+<%= link_to 'Edit', edit_cart_path(@cart) %> |
+<%= link_to 'Back', carts_path %>
