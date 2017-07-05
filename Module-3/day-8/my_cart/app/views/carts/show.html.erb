@@ -2,14 +2,12 @@
 
 <p>
   <strong>User email:</strong>
-  <%= @cart.user_email %>
+  <span id="email"></span>
 </p>
 
   <strong>Items</strong>
-<ul>
-    <% @cart.items.each do |item| %>
-        <li><%= item.name %> - <%= item.price %>
-    <% end %>
+<ul id="items">
+
     </ul>
 
     <%= form_for(@cart_item) do |f| %>
@@ -20,3 +18,41 @@
 
 <%= link_to 'Edit', edit_cart_path(@cart) %> |
 <%= link_to 'Back', carts_path %>
+
+<script>
+/*
+ 1) Grab cart data
+ 2) Extract out user_email, put name in user_email
+ 3) Extract our items, for each item put in unordered list
+
+ */
+
+function renderCart(data){
+  $("#email").html(data.user_email)
+  let list = $("#items")
+  list.empty()
+  data.items.forEach(function(item) {
+    list.append(`<li>${item.name} - ${item.price}</li>`)
+  })
+}
+
+$.get("/carts/1.json",function(data) {
+  renderCart(data)
+})
+/*
+$.get("/carts/1.json",renderCart)
+*/
+
+$("#new_cart_item").on("submit",function(event){
+  event.preventDefault()
+
+  $.post("/cart_items.json",$(this).serialize(),function(data){
+    renderCart(data)
+  })
+  /*
+  $.post("/cart_items.json",$(this).serialize(),renderCart)
+  */
+})
+
+
+ </script>

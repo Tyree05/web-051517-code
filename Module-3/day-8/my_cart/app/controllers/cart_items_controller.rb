@@ -29,7 +29,7 @@ class CartItemsController < ApplicationController
     respond_to do |format|
       if @cart_item.save
           format.html { redirect_to @cart_item.cart, notice: 'Cart item was successfully created.' }
-        format.json { render :show, status: :created, location: @cart_item }
+        format.json { render json: @cart_item.cart}
       else
         format.html { render :new }
         format.json { render json: @cart_item.errors, status: :unprocessable_entity }
