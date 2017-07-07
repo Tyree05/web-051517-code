@@ -1,6 +1,7 @@
 $("#create").on("click", function(event) {
 
   let accessToken = $("#token").val()
+  accessToken = "bab7c39bd31e6ff755628b91ddc12ab3761d9fd4"
   let fileName = $("#file_name").val()
   let description = $("#description").val()
   let content = $("#content").val()
@@ -13,7 +14,7 @@ $("#create").on("click", function(event) {
     }
   }
 }
-
+/*
 $.ajax({
   url: "https://api.github.com/gists",
   method: "POST",
@@ -25,22 +26,16 @@ $.ajax({
     displayGists()
   }
 })
+*/
+displayGists()
 })
 
 function displayGists() {
   let accessToken = $("#token").val()
-  $.ajax({
-  url: "https://api.github.com/gists",
-  method: "GET",
-  headers: {
-        "Authorization":`token ${accessToken}`
-    },
-  success: function(data) {
-  //  debugger
-    data.forEach(function(gist){
-      $("#myGists").append(`<li>${gist.description}</li>`)
-    })
-  //  console.log(data)
-  }
-});
+  accessToken = "bab7c39bd31e6ff755628b91ddc12ab3761d9fd4"
+
+  getGists(accessToken,(data) => {
+    let listOfGists = new ListOfGists(data)
+    $("#myGists").html(listOfGists.render())
+  })
 }
