@@ -6,20 +6,36 @@ import TodoForm from './TodoForm'
 
 class App extends Component {
   state = {
-    items: []
+    isLoading: true,
+    items: ["something"]
   }
-
-  //initial mounting
-  componentDidMount(){
+  // constructor(props){
+  //   super(props)
+  //   this.state = {
+  //     user: this.props.user
+  //   }
+  //   this.handleSubmit = this.handleSubmit.bind(this)
+  //   const isLoggedIn = false
+  // }
+  componentWillMount(){
+    console.log(" 1:componentWillMount")
     const apiURL = 'http://api.icndb.com/jokes/random'
     fetch(apiURL)
-      .then( res => res.json() )
-      .then( jsonData =>
-        {
-        console.log(jsonData);
-        const items = [jsonData.value.joke]
-        this.setState({ items })
+    .then( resp => resp.json())
+    .then( jsonObject => {
+      console.log("data from api", jsonObject)
+      this.setState({
+        items: [...this.state.items, jsonObject.value.joke]
       })
+    })
+  }
+  //initial mounting
+  componentDidMount(){
+   console.log("3: componentDidMount")
+  }
+
+  componentWillUpdate(){
+    console.log("componentWillUpdate")
   }
   handleSubmit(newItem){
     this.setState({items: [...this.state.items, newItem]})
@@ -31,7 +47,7 @@ class App extends Component {
     this.setState({items})
   }
   render () {
-    console.log("rendering items")
+    console.log("2: rendering items")
     return (
       <div>
         <div className='header'>
