@@ -19,6 +19,7 @@
 - [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
 ### Module 4
+- [Props and State](http://youtu.be/AD7x3rcE3vw)
 - [React Router v4](http://youtu.be/pBxqWjbaonc)
 - [Component Lifecycle](http://youtu.be/WMGJQz_2BlM)
 - [Hogwarts Lab Review](https://youtu.be/W875Sx41ILQ)
