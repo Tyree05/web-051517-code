@@ -19,7 +19,7 @@
 - [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
 ### Module 4
-
+- [React Router v4](http://youtu.be/pBxqWjbaonc)
 - [Hogwarts Lab Review](https://youtu.be/W875Sx41ILQ)
 
 ## Avi Lecture Videos
