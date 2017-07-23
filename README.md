@@ -20,6 +20,7 @@
 
 ### Module 4
 - [React Router v4](http://youtu.be/pBxqWjbaonc)
+- [Component Lifecycle](http://youtu.be/WMGJQz_2BlM)
 - [Hogwarts Lab Review](https://youtu.be/W875Sx41ILQ)
 
 ## Avi Lecture Videos
