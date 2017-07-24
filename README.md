@@ -18,6 +18,12 @@
 - [FULL RAILS CRUD](http://youtu.be/umMiA-9WQpc)
 - [Omniauth](http://youtu.be/LQlfsr7ZV7s)
 
+### Module 4
+- [Props and State](http://youtu.be/AD7x3rcE3vw)
+- [React Router v4](http://youtu.be/pBxqWjbaonc)
+- [Component Lifecycle](http://youtu.be/WMGJQz_2BlM)
+- [Hogwarts Lab Review](https://youtu.be/W875Sx41ILQ)
+
 ## Avi Lecture Videos
 - [Playlister Lab](https://www.youtube.com/watch?v=LRX0aZj9v7Y)
 - [SQL](https://www.youtube.com/watch?v=fmYVLDLlx3g)
