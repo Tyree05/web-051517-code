@@ -43,13 +43,11 @@ class GiphContainer extends Component{
 
   render(){
     return(
+        <Segment>
         <Grid columns={2} divided >
-          <Segment>
-            <Grid.Row>
-              <Search onSearch={this.changeSearchTerm.bind(this)} />
-            </Grid.Row>
             <Grid.Row>
               <Grid.Column>
+                <Search onSearch={this.changeSearchTerm.bind(this)} />
                 <Route path='/giphs' render={()=>(
                   <GiphList giphs={this.state.giphList} changeGiph={this.changeSelectedGiph.bind(this)}/>
                 )}/>
@@ -60,8 +58,8 @@ class GiphContainer extends Component{
                 )}/>
               </Grid.Column>
             </Grid.Row>
-          </Segment>
         </Grid>
+        </Segment>
     )
   }
 }
