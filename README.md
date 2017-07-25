@@ -23,6 +23,7 @@
 - [React Router v4](http://youtu.be/pBxqWjbaonc)
 - [Component Lifecycle](http://youtu.be/WMGJQz_2BlM)
 - [Hogwarts Lab Review](https://youtu.be/W875Sx41ILQ)
+- [Rails JWT](http://youtu.be/-eDzwyJpVqE)
 
 ## Avi Lecture Videos
 - [Playlister Lab](https://www.youtube.com/watch?v=LRX0aZj9v7Y)
